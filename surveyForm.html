@@ -5,5 +5,74 @@
     <title>Survey Form</title>
   </head>
 
-  <body></body>
+  <body>
+    <h1 id="title">Student Feedback Survey</h1>
+
+    <p id="description">
+      Please fill this form to help us improve our services.
+    </p>
+
+    <form id="survey-form">
+      <!-- NAME -->
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <br /><br />
+
+      <!-- EMAIL -->
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <br /><br />
+
+      <!-- NUMBER -->
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Enter your age"
+        min="10"
+        max="100"
+      />
+
+      <br /><br />
+
+      <!-- DROPDOWN -->
+      <label>Which option best describes you?</label>
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+      </select>
+
+      <br /><br />
+
+      <!-- RADIO BUTTONS -->
+      <p>Would you recommend us?</p>
+
+      <label> <input type="radio" name="recommend" value="yes" /> Yes </label>
+
+      <label> <input type="radio" name="recommend" value="no" /> No </label>
+
+      <br /><br />
+
+      <!-- CHECKBOXES -->
+      <p>What do you like?</p>
+
+      <label> <input type="checkbox" value="design" /> Design </label>
+
+      <label> <input type="checkbox" value="content" /> Content </label>
+
+      <br /><br />
+
+      <!-- TEXTAREA -->
+      <label>Additional Comments</label>
+      <br />
+      <textarea rows="4" cols="30"></textarea>
+
+      <br /><br />
+
+      <!-- SUBMIT -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
 </html>
